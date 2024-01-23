@@ -1,4 +1,4 @@
-# Information-Rate-of-Massive-MIMO-System
+# Information-Rate-of-mmWave-Massive-MIMO-System
 ## Perfect CSI 
 
 - Problem Statement:
