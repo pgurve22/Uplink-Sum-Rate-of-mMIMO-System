@@ -21,3 +21,10 @@
 
 
 ![Info_Rate_Perfect_CSI_Power_scaling_ues](Info_Rate_Perfect_CSI_Power_scaling_ues.png)
+
+
+## Imperfect CSI:
+
+- Problem Statement:
+
+- Simulation: 
