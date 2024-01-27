@@ -1,6 +1,5 @@
 %>>>>>>>>>>>>>>>>>mmWave Massive MIMO System Perfect CSI>>>>>>>>>>>>>>>
 clear all;
-hold on;
 ITER = 1000;
 K = 10; % Number of users
 Mv = 20:30:500; % Number of BS antennas
@@ -11,6 +10,7 @@ bound_MRC = zeros(1,length(Mv)); %lower bound for max achievable rate
 rate_ZF = zeros(1,length(Mv)); %max achievable rate for ZF
 
 for it=1:ITER    
+    it
     D = Dmatrix(K); 
     beta = diag(D);     % diag matrix or co-variance
     for mx=1:length(Mv)     
@@ -36,10 +36,11 @@ rate_MRC = rate_MRC/ITER;
 bound_MRC = bound_MRC/ITER;
 rate_ZF = rate_ZF/ITER;
 
-plot(Mv,rate_MRC,'b o-','LineWidth',1.8,'MarkerFaceColor','green','MarkerSize',8.0)
+figure()
+plot(Mv,rate_MRC,' o-','LineWidth',1.8,'MarkerFaceColor','auto','MarkerSize',8.0)
 hold on
-plot(Mv,bound_MRC,'g -.','LineWidth',1.8)
-plot(Mv,rate_ZF,'r -s','LineWidth',1.8,'MarkerFaceColor','yellow','MarkerSize',8.0)
+plot(Mv,bound_MRC,' -.','LineWidth',1.8)
+plot(Mv,rate_ZF,' -s','LineWidth',1.8,'MarkerFaceColor','auto','MarkerSize',8.0)
 grid on
 title('Information Rate of mmWave Massive MIMO System with No Power Scaling')
 %title('Information Rate of mmWave Massive MIMO System with Power Scaling')
