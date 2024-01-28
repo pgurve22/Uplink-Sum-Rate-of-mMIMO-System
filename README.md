@@ -10,7 +10,7 @@
 
 
 Now if decrease power as - 
-$ P_k = E_k/r  $
+$$ P_k = E_k/r  $$
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
