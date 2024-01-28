@@ -41,7 +41,7 @@ and if $N_r\rightarrow\infty$ then-
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
 
-As $N_r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. 
+As $N_r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. Hence we can't see much variation in information rate if we decrease power as $\frac{E_k}{N_r}$.
 
 
 ![Info_Rate_Perfect_CSI_Power_scaling](Info_Rate_Perfect_CSI_Power_scaling.png)
@@ -87,7 +87,7 @@ Now if decrease power as (Power Scaling Law)-
 $$P_k = \frac{E_k}{\sqrt{N_r}}$$
 
 
-$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{N_r}}$.
+$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{N_r}}$ in presence of channel estimation error (or CSI uncertinity). Hence we can't decrease power as $\frac{E_k}{\sqrt{N_r}}$.  
 
 
 - Simulation: 
