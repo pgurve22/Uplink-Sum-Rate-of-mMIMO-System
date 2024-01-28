@@ -64,7 +64,7 @@ As $N_r$ is becoming large, transmit power of each user is becoming zero and $SI
 ![Info_Rate_Imerfect_CSI_No_Power_Scaling_ues](Info_Rate_Imperfect_CSI_No_Power_Scaling_ues.png)
 
 
-Now if decrease power as (Power Scaling Law)-
+Now if decrease power of user $k$ as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{N_r}$$
@@ -82,7 +82,7 @@ As variance of channel estimation error directly proprotional to BS antennas $N_
 ![Info_Rate_Imerfect_CSI_Power_Scaling_1_ues](Info_Rate_Imperfect_CSI_Power_Scaling_1_ues.png)
 
 
-Now if decrease power as (Power Scaling Law)-
+Now if decrease power of user $k$ as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{\sqrt{N_r}}$$
