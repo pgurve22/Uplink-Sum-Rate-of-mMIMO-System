@@ -8,9 +8,14 @@
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling](Info_Rate_Perfect_CSI_No_Power_scaling.png)
 
+Large scale fading co-efficient for user $k$ is defined as - 
+$$\beta_k = \frac{||\bar{h}_k||^2}{r}$$
+Where $r$ is total no. of BS antennas.
+
+So, as the no. of BS antennas $r$ is large or tends to $\infty$, channel is behaving as less and less fluctuating or we can say less and less fading, is nothing but Channel Hardenning. 
 
 Now if decrease power as - 
-$$ P_k = E_k/r  $$
+$$P_k = \frac{E_k}{r}$$
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
