@@ -20,7 +20,7 @@ $$P_k = \frac{E_k}{r}$$
 
 So for given user $k$-
 
-$$SINR = \frac{||\bar{h}_k||^2 P_k}{\sum_{i\neqk}P_i\brta_i + N_o}$$
+$$SINR = \frac{||\bar{h}_k||^2 P_k}{\sum_{i\neq k}P_i\beta_i + N_o}$$
 
 and $r\rightarrow\infty$ then -
 
