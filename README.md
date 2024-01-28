@@ -28,6 +28,8 @@ and if $N_r\rightarrow\infty$ then-
 
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
+As $N_r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. 
+
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
