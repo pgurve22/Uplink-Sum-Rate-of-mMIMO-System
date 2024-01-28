@@ -101,6 +101,50 @@ As $N_r$ is becoming large, transmit power of each user is becoming zero and $SI
 
 ## Imperfect CSI:
 
+### Uplink Channel Estimation
+### Pilot i/o-o/p model:
+
+
+```math
+       \underbrace{Y_p}_{N_r\times L}=\underbrace{H}_{N_r\times N_t}\underbrace{X_p}_{N_t\times L}+\underbrace{V_p}_{N_r\times L} 
+```
+
+
+Minimize the Maximum Likelihood -
+
+
+```math
+        min ||Y_p-HX_p||^{2}_F
+```
+
+
+We get the channel estimate as -
+
+
+```math
+        \hat{H} = Y_pX^{H}_p(X_pX^{H}_p)^{-1}
+```
+
+
+```math
+       \hat{H} = (HX_p+V_p)X^{H}_p(X_pX^{H}_p)^{-1}
+ 
+```
+
+
+```math
+        \hat{H} = H + V_pX^{H}_p(X_pX^{H}_p)^{-1}    
+```
+
+
+```math
+        \hat{h}_{rt}=h_{rt}+e_{rt}
+```
+
+
+Where $e_{rt}$ is estimation error with -
+
+
 - Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
 
 
