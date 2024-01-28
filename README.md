@@ -1,13 +1,16 @@
 # Information-Rate-of-mmWave-Massive-MIMO-System
 ## Perfect CSI 
 
-- Problem Statement:
+- Problem Statements: Simulate a mmWave Massive MIMO wireless system in MATLAB for perfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation vs No of antennas curve. 
 
 - Simulation:
 
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling](Info_Rate_Perfect_CSI_No_Power_scaling.png)
 
+
+Now if decrease power as - 
+$ P_k = E_k/r  $
 
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
