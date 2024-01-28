@@ -142,7 +142,20 @@ We get the channel estimate as -
 ```
 
 
+$$e_{rt} = V_pX^{H}_p \frac{1}{L}\left \[{\begin{matrix}
+\frac{1}{P_1} & & &\\
+ & \frac{1}{P_2} & &\\
+ & & . &\\
+ & & &\frac{1}{P_t} \\
+\end{matrix}}\right \]$$
+
+
 Where $e_{rt}$ is estimation error with -
+
+- Mean $\mathbb{E}[e_{rt}]=0$
+
+- Variance $\mathbb{E}[{|e_{rt}|^2}]=\frac{N_o}{LP_t}$
+
 
 
 - Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
