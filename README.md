@@ -24,19 +24,15 @@ So for given user $k$-
 SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 ```
 
+
+![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
+
+
 and if $N_r\rightarrow\infty$ then-
 
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
 As $N_r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. 
-
-
-![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
-
-
-- Problem Statement:
-
-- Simulation:
 
 
 ![Info_Rate_Perfect_CSI_Power_scaling](Info_Rate_Perfect_CSI_Power_scaling.png)
