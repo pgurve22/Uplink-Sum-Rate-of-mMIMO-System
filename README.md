@@ -29,7 +29,7 @@ SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
 
-Now if we decrease power as -
+Now if we decrease power as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{N_r}$$
