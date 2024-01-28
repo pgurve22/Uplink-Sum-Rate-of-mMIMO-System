@@ -63,12 +63,28 @@ As $N_r$ is becoming large, transmit power of each user is becoming zero and $SI
 ![Info_Rate_Imerfect_CSI_No_Power_Scaling_ues](Info_Rate_Imperfect_CSI_No_Power_Scaling_ues.png)
 
 
-- Problem Statement:
+Now if decrease power as (Power Scaling Law)-
+
+
+$$P_k = \frac{E_k}{N_r}$$
+
+
+As variance of channel estimation error directly proprotional to BS antennas $N_r$ $SINR$ become zero if we increase the BS antennas. Hence we can't decrease power as $\frac{E_k}{N_r}$.  
+
 
 - Simulation: 
 
 
 ![Info_Rate_Imerfect_CSI_Power_Scaling_1](Info_Rate_Imperfect_CSI_Power_Scaling_1.png)
+
+
+Now if decrease power as (Power Scaling Law)-
+
+
+$$P_k = \frac{E_k}{\sqrt{N_r}}$$
+
+
+$$SINR$$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{N_r}}$. 
 
 
 ![Info_Rate_Imerfect_CSI_Power_Scaling_1_ues](Info_Rate_Imperfect_CSI_Power_Scaling_1_ues.png)
