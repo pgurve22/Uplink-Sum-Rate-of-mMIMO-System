@@ -10,13 +10,13 @@
 
 Large scale fading co-efficient for user $k$ is defined as - 
 
-$$\beta_k = \frac{||\bar{h}_k||^2}{r}$$
+$$\beta_k = \frac{||\bar{h}_k||^2}{N_r}$$
 
-Where $r$ is total no. of BS antennas. So, as the number of BS antennas $r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
+Where $N_r$ is total no. of BS antennas. So, as the number of BS antennas $N_r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
 
 Now if we decrease power as -
 
-$$P_k = \frac{E_k}{r}$$
+$$P_k = \frac{E_k}{N_r}$$
 
 So for given user $k$-
 
@@ -24,7 +24,7 @@ So for given user $k$-
 SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 ```
 
-and if r\rightarrow\infty then-
+and if $N_r\rightarrow\infty$ then-
 
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
