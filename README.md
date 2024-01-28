@@ -18,11 +18,13 @@ Now if we decrease power as -
 
 $$P_k = \frac{E_k}{r}$$
 
-So for given user $k$-
+$$So for given user k$$-
 
-$$SINR = \frac{||\bar{h}_k||^2 P_k}{\sum_{i\neq k}P_i\beta_i + N_o}$$
+```math
+SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
+```
 
-and $r\rightarrow\infty$ then -
+$$and if r\rightarrow\infty then$$-
 
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
