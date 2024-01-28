@@ -20,9 +20,21 @@
 
 We combine signals from all BS antennas using MRC ($\bar{w}$) receiver.
 
+
 ```math
     \bar{w} = \frac{\bar{h}_k}{||\bar{h}_k||}
 ```
+
+
+```math
+    \hat{x}_k = \bar{w}^{H}\bar{y}
+```
+
+
+```math
+    \hat{x}_k = \frac{\bar{h}^{H}_k}{||\bar{h}_k||}(\bar{h}_k x_k + {\sum_{j \neq k}\bar{h}_j x_j} + \bar{\eta})
+```
+
 
 - Problem Statements: Simulate a mmWave Massive MIMO wireless system in MATLAB for perfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation Rate vs Number of BS Antennas curve. 
 
