@@ -1,6 +1,29 @@
 # Information-Rate-of-mmWave-Massive-MIMO-System
 ## Perfect CSI 
 
+### Model of mmWave Massive-MIMO System:
+
+
+```math
+    \bar{y} = \textbf{H}\bar{x} + \bar{\eta} 
+```
+
+
+```math
+    \bar{y} = \bar{h}_k x_k + {\sum_{j \neq k}\bar{h}_j x_j} + \bar{\eta} 
+```
+
+
+```math
+    \bar{y} = \textbf{H}\bar{x} + \bar{\eta} 
+```
+
+We combine signals from all BS antennas using MRC ($\bar{w}$) receiver.
+
+```math
+    \bar{w} = \frac{\bar{h}_k}{||\bar{h}_k||}
+```
+
 - Problem Statements: Simulate a mmWave Massive MIMO wireless system in MATLAB for perfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation Rate vs Number of BS Antennas curve. 
 
 - Simulation:
