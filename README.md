@@ -15,7 +15,7 @@ Large scale fading co-efficient for user $k$ is defined as -
 $$\beta_k = \frac{||\bar{h}_k||^2}{N_r}$$
 
 
-Where $N_r$ is total no. of BS antennas. So, as the number of BS antennas $N_r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
+Where $N_r$ is total no. of BS antennas and $\bar{h}_k$ is channel corresponding to user $k$. So, as the number of BS antennas $N_r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
 
 
 So for given user $k$-
@@ -29,7 +29,7 @@ SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 ![Info_Rate_Perfect_CSI_No_Power_scaling_ues](Info_Rate_Perfect_CSI_No_Power_scaling_ues.png)
 
 
-Now if we decrease power as (Power Scaling Law)-
+Now if we decrease power of user $k$ as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{N_r}$$
@@ -52,7 +52,8 @@ As $N_r$ is becoming large, transmit power of each user is becoming zero and $SI
 
 ## Imperfect CSI:
 
-- Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
+- Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
+
 
 - Simulation: 
 
@@ -94,7 +95,6 @@ $SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\
 
 
 ![Info_Rate_Imerfect_CSI_Power_Scaling_2](Info_Rate_Imperfect_CSI_Power_Scaling_2.png)
-
 
 
 ![Info_Rate_Imerfect_CSI_Power_Scaling_2_ues](Info_Rate_Imperfect_CSI_Power_Scaling_2_ues.png)
