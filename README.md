@@ -156,6 +156,42 @@ Where $e_{rt}$ is estimation error with -
 
 - Variance $\mathbb{E}[{|e_{rt}|^2}]=\frac{N_o}{LP_t}$
 
+So the variance of estimate of channel $\hat{h}_{lk}$ -
+
+
+```math
+    \mathbb{E}[|\hat{h}_{lk}|^2]=\beta_k + \frac{N_o}{LP_k}
+```
+
+Match Fitering - 
+
+```math
+    \hat{x}_k = \hat{h}^{H}_k \bar{y}
+```
+
+
+```math
+    \hat{x}_k = (\bar{h}_k + \bar{e}_k)^H (\bar{h}_k x_k + {\sum_{j \neq k}\bar{h}_j x_j} + \bar{v})
+```
+
+
+```math
+    \hat{x}_k = ||\bar{h}_k||^2 x_k + \bar{e}^{H}_k \bar{h}_k x_k + \hat{h}^{H}_k {\sum_{j \neq k}\bar{h}_j x_j} + \hat{h}^{H}_k \bar{v}
+```
+
+$SINR$ for given user k - 
+
+```math
+    SINR = \frac{P_k ||\bar{h}_k||^4}{P_k \mathbb{E}[|\bar{e}^{H}_k \bar{h}_k|^2] + \sum_{j \neq k}P_j \mathbb{E}[|\hat{h}^{H}_j|^2] + \mathbb{E}[|\hat{h}^{H}_k \bar{v}|^2]}
+```
+
+
+Finally $SINR$ expression after simplification is given by -
+
+
+```math
+    SINR = \frac{||\bar{h}_k||^2 P_k}{\frac{N_o}{L} + \frac{\sum_{j \neq k} P_j \beta_j (\beta_k+\frac{N_o}{LP_k})}{\beta_k} + \frac{N_o(\beta_k + \frac{N_o}{LP_k})}{\beta_k}}
+```
 
 
 - Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
