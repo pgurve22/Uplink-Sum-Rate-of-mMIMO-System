@@ -50,7 +50,7 @@ SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 ```
 
 
-- Problem Statements: Simulate a mmWave Massive MIMO wireless system in MATLAB for perfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation Rate vs Number of BS Antennas curve. 
+- Problem Statements: Simulate a mmWave Massive MIMO wireless system in MATLAB for perfect CSI assumtion for t = 10 Single antenna users. Generate uplink sum rate for both MRC and ZF receivers and show how no of antennas at BS impacts information rate in Infomation Rate vs Number of BS Antennas curve. 
 
 - Simulation:
 
@@ -61,10 +61,10 @@ SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 Large scale fading co-efficient for user $k$ is defined as - 
 
 
-$$\beta_k = \frac{||\bar{h}_k||^2}{N_r}$$
+$$\beta_k = \frac{||\bar{h}_k||^2}{r}$$
 
 
-Where $N_r$ is total no. of BS antennas and $\bar{h}_k$ is channel corresponding to user $k$. So, as the number of BS antennas $N_r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
+Where $r$ is total no. of BS antennas and $\bar{h}_k$ is channel corresponding to user $k$. So, as the number of BS antennas $r$ is large or tends to be $\infty$, the channel is behaving as less and less fluctuating, or, we can say, less and less fading, called Channel Hardenning.
 
 
 So for given user $k$-
@@ -81,16 +81,16 @@ SINR = \frac{||\bar{h}_{k}||^2P_k}{{\sum_{i\neq k} p_i \beta_i}+N_o}
 Now if we decrease power of user $k$ as (Power Scaling Law)-
 
 
-$$P_k = \frac{E_k}{N_r}$$
+$$P_k = \frac{E_k}{r}$$
 
 
-and if $N_r\rightarrow\infty$ then-
+and if $r\rightarrow\infty$ then-
 
 
 $$SINR=\frac{\beta_k E_k}{N_o}$$
 
 
-As $N_r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. Hence we can't see much variation in information rate if we decrease power as $\frac{E_k}{N_r}$.
+As $r$ is becoming large, transmit power of each user is becoming zero and $SINR$ is becoming constant. Hence we can't see much variation in information rate if we decrease power as $\frac{E_k}{r}$.
 
 
 ![Info_Rate_Perfect_CSI_Power_scaling](Info_Rate_Perfect_CSI_Power_scaling.png)
@@ -106,7 +106,7 @@ As $N_r$ is becoming large, transmit power of each user is becoming zero and $SI
 
 
 ```math
-       \underbrace{Y_p}_{N_r\times L}=\underbrace{H}_{N_r\times N_t}\underbrace{X_p}_{N_t\times L}+\underbrace{V_p}_{N_r\times L} 
+       \underbrace{Y_p}_{r\times L}=\underbrace{H}_{r\times t}\underbrace{X_p}_{t\times L}+\underbrace{V_p}_{r\times L} 
 ```
 
 
@@ -138,11 +138,11 @@ We get the channel estimate as -
 
 
 ```math
-        \hat{h}_{rt}=h_{rt}+e_{rt}
+        \hat{h}_{lk}=h_{lk}+e_{lk}
 ```
 
 
-$$e_{rt} = V_pX^{H}_p \frac{1}{L}\left \[{\begin{matrix}
+$$e_{lk} = V_pX^{H}_p \frac{1}{L}\left \[{\begin{matrix}
 \frac{1}{P_1} & & &\\
  & \frac{1}{P_2} & &\\
  & & . &\\
@@ -150,11 +150,11 @@ $$e_{rt} = V_pX^{H}_p \frac{1}{L}\left \[{\begin{matrix}
 \end{matrix}}\right \]$$
 
 
-Where $e_{rt}$ is estimation error with -
+Where $e_{lk}$ is estimation error with -
 
-- Mean $\mathbb{E}[e_{rt}]=0$
+- Mean $\mathbb{E}[e_{lk}]=0$
 
-- Variance $\mathbb{E}[{|e_{rt}|^2}]=\frac{N_o}{LP_t}$
+- Variance $\mathbb{E}[{|e_{lk}|^2}]=\frac{N_o}{LP_t}$
 
 So the variance of estimate of channel $\hat{h}_{lk}$ -
 
@@ -194,7 +194,7 @@ Finally $SINR$ expression after simplification is given by -
 ```
 
 
-- Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for K = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
+- Problem Statement: Simulate a mmWave Massive MIMO wireless system in MATLAB for imperfect CSI assumtion for t = 10 Single antenna users. Generate uplink sum rate with channel estimation for MRC receivers and show how no of antennas at BS impacts information rate in Infomation rate vs Number of BS Antennas curve. 
 
 
 - Simulation: 
@@ -209,10 +209,10 @@ Finally $SINR$ expression after simplification is given by -
 Now if decrease power of user $k$ as (Power Scaling Law)-
 
 
-$$P_k = \frac{E_k}{N_r}$$
+$$P_k = \frac{E_k}{r}$$
 
 
-As variance of channel estimation error directly proprotional to BS antennas $N_r$ and $SINR$ will become zero if we increase the BS antennas. Hence we can't decrease power as $\frac{E_k}{N_r}$.  
+As variance of channel estimation error directly proprotional to BS antennas $r$ and $SINR$ will become zero if we increase the BS antennas. Hence we can't decrease power as $\frac{E_k}{r}$.  
 
 
 - Simulation: 
@@ -227,10 +227,15 @@ As variance of channel estimation error directly proprotional to BS antennas $N_
 Now if decrease power of user $k$ as (Power Scaling Law)-
 
 
-$$P_k = \frac{E_k}{\sqrt{N_r}}$$
+$$P_k = \frac{E_k}{\sqrt{r}}$$
 
 
-$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{N_r}}$ in presence of channel estimation error (or CSI uncertinity). Hence we can't decrease power as $\frac{E_k}{\sqrt{N_r}}$.  
+$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{r}}$ in presence of channel estimation error (or CSI uncertinity). $SINR$ for given user k is given by-
+
+
+```math
+    SINR = \frac{E^{2}_k \beta^{2}_k L}{N^{2}_o}
+```
 
 
 - Simulation: 
