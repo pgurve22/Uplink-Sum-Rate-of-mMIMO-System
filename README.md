@@ -215,6 +215,9 @@ $$P_k = \frac{E_k}{r}$$
 As variance of channel estimation error directly proprotional to BS antennas $r$ and $SINR$ will become zero if we increase the BS antennas. Hence we can't decrease power as $\frac{E_k}{r}$.  
 
 
+$$\lim_{{r \to \infty}} SINR = 0$$
+
+
 - Simulation: 
 
 
@@ -234,7 +237,7 @@ $SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\
 
 
 ```math
-    SINR = \frac{E^{2}_k \beta^{2}_k L}{N^{2}_o}
+    \lim_{{r \to \infty}} SINR = \frac{E^{2}_k \beta^{2}_k L}{N^{2}_o}
 ```
 
 
