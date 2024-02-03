@@ -42,7 +42,7 @@ We combine signals from all BS antennas using MRC ($\bar{w}$) receiver.
 ```
 
 
-$SINR$ for user $k$ is given by-
+$SINR$ for user $k$ is given as-
 
 
 ```math
@@ -154,7 +154,7 @@ Where $e_{lk}$ is estimation error with -
 
 - Mean $\mathbb{E}[e_{lk}]=0$
 
-- Variance $\mathbb{E}[{|e_{lk}|^2}]=\frac{N_o}{LP_t}$
+- Variance $\mathbb{E}[{|e_{lk}|^2}]=\frac{N_o}{LP_k}$
 
 So the variance of estimate of channel $\hat{h}_{lk}$ -
 
@@ -186,7 +186,7 @@ $SINR$ for given user k -
 ```
 
 
-Finally $SINR$ expression after simplification is given by -
+Finally $SINR$ expression after simplification is given as -
 
 
 ```math
@@ -206,7 +206,7 @@ Finally $SINR$ expression after simplification is given by -
 ![Info_Rate_Imerfect_CSI_No_Power_Scaling_ues](Info_Rate_Imperfect_CSI_No_Power_Scaling_ues.png)
 
 
-Now if decrease power of user $k$ as (Power Scaling Law)-
+Now if we decrease power of user $k$ as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{r}$$
@@ -227,13 +227,13 @@ $$\lim_{{r \to \infty}} SINR = 0$$
 ![Info_Rate_Imerfect_CSI_Power_Scaling_1_ues](Info_Rate_Imperfect_CSI_Power_Scaling_1_ues.png)
 
 
-Now if decrease power of user $k$ as (Power Scaling Law)-
+Now if we decrease power of user $k$ as (Power Scaling Law)-
 
 
 $$P_k = \frac{E_k}{\sqrt{r}}$$
 
 
-$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{r}}$ in presence of channel estimation error (or CSI uncertinity). $SINR$ for given user k is given by-
+$SINR$ become constant and we can't decrease power any faster than $\frac{E_k}{\sqrt{r}}$ in presence of channel estimation error (or CSI uncertinity). $SINR$ for given user k is given as-
 
 
 ```math
