@@ -203,7 +203,7 @@ Finally $SINR$ expression after simplification is given as -
 ![Info_Rate_Imerfect_CSI_No_Power_Scaling](Info_Rate_Imperfect_CSI_No_Power_Scaling.tif)
 
 
-![Info_Rate_Imerfect_CSI_No_Power_Scaling_ues](Info_Rate_Imperfect_CSI_No_Power_Scaling_ues.eps)
+![Info_Rate_Imerfect_CSI_No_Power_Scaling_ues](Info_Rate_Imperfect_CSI_No_Power_Scaling_ues.png)
 
 
 Now if we decrease power of user $k$ as (Power Scaling Law)-
